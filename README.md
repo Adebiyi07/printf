@@ -1,4 +1,4 @@
-Read me for printf group project.
+Readme for printf group project.
 Group members: Stephen Barracks Asemiah and John Adebiyi
 
 The goal of the project is to create a function that has functionality

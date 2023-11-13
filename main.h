@@ -15,4 +15,5 @@ int prints_percentage(va_list types );
 
 int _strlen(char *s);
 int print_deci(va_list args);
+int print_bnr(va_list val);
 #endif
