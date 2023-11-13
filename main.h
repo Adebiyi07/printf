@@ -14,5 +14,5 @@ int str_printer(va_list val);
 int prints_percentage(va_list types );
 
 int _strlen(char *s);
-
+int print_deci(va_list args);
 #endif
