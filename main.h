@@ -11,9 +11,11 @@ int _putchar.c
 int _printf(const char *format, ...);
 int char_printer(va_list val);
 int str_printer(va_list val);
-int prints_percentage(va_list types );
+int prints_percentage(va_list types);
 
 int _strlen(char *s);
 int print_deci(va_list args);
+int print_unsigned(va_list args);
 int print_bnr(va_list val);
+
 #endif
