@@ -9,8 +9,8 @@
 int int_printer(va_list args)
 {
 	int i = 1;
-	int n = va_args(args, int);
-	int num, last - n % 1, digit, exp - 1;
+	int n = va_arg(args, int);
+	int num, last = n % 10, digit, exp = 1;
 
 	n = n / 10;
 	num = n;

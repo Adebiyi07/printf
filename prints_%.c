@@ -6,7 +6,7 @@
  * @types: list of arguments
  * Return: 1.
  */
-int prints_percentage(va_lists types)
+int prints_percentage(va_list types)
 {
 	UNUSED(types);
 	return (write(1, "%%", 1));
