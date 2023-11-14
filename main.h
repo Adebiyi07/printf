@@ -31,6 +31,7 @@ int prints_percentage(va_list types);
 int int_printer(va_list args);
 int _strlen(char *s);
 int print_deci(va_list args);
+
 int print_str_exclude(va_list val);
 int print_str_rev(va_list args);
 
@@ -41,4 +42,5 @@ int print_octa(va_list val);
 int print_hexa(va_list val);
 int print_HEXA(va_list val);
 int print_rot13(va_list args);
+
 #endif
