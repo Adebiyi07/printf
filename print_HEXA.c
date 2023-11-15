@@ -12,17 +12,17 @@ int print_HEXA(va_list val)
 	int g;
 	unsigned int num = va_arg(val, unsigned int);
 	unsigned int asb = num;
-	int cntr = 0;
+	int counter = 0;
 
 	while (num / 16 != 0)
 	{
 	num /= 16;
-	cntr++;
+	counter++;
 	}
-	cntr++;
-	arr = malloc(cntr * sizeof(int));
+	counter++;
+	arr = malloc(counter * sizeof(int));
 
-	for (g = 0; g < cntr; g++)
+	for (g = 0; g < counter; g++)
 	{
 	arr[g] = asb % 16;
 	asb /= 16;
@@ -34,5 +34,5 @@ int print_HEXA(va_list val)
 	_putchar(arr[g] + '0');
 	}
 	free(arr);
-	return (cntr);
+	return (counter);
 }

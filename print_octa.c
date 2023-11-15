@@ -10,27 +10,27 @@ int print_octa(va_list val)
 {
 	int z;
 	int *arr;
-	int cntr = 0;
+	int counter = 0;
 	unsigned int num = va_arg(val, unsigned int);
 	unsigned int asb = num;
 
 	while (num / 8 != 0)
 	{
-		num /= 8;
-		cntr++;
+	num /= 8;
+	counter++;
 	}
-	cntr++;
-	arr = malloc(cntr * sizeof(int));
+	counter++;
+	arr = malloc(counter * sizeof(int));
 
-	for (z = 0; z < cntr; z++)
+	for (z = 0; z < counter; z++)
 	{
-		arr[z] = asb % 8;
-		asb /= 8;
+	arr[z] = asb % 8;
+	asb /= 8;
 	}
-	for (z = cntr - 1; z >= 0; z--)
+	for (z = counter - 1; z >= 0; z--)
 	{
-		_putchar(arr[z] + '0');
+	_putchar(arr[z] + '0');
 	}
 	free(arr);
-	return (cntr);
+	return (counter);
 }
