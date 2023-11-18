@@ -35,7 +35,9 @@ int print_deci(va_list args);
 int print_str_exclude(va_list val);
 int print_str_rev(va_list args);
 
-
+int *strcpy(char *dest, char *src);
+int print_pointer(va_list val);
+int print_hex_extra(unsigned long int num);
 int print_bnr(va_list val);
 int print_unsigned(va_list arg);
 int print_octa(va_list val);

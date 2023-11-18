@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * print_str_rev - prints a string in reverse
- * @args: argument parameters
- * Return: reversed string
- */
+* print_str_rev - function which prints a string in reverse
+* @args: the argument parameters
+* Return: a reversed string
+*/
 
 int print_str_rev(va_list args)
 {
 
-	char *s = va_arg(args, char*);
-	int n = 0;
-	int m;
+	char *f = va_arg(args, char*);
+	int b = 0;
+	int a;
 
-	if (s == NULL)
-		s = "(null)";
-	while (s[n] != '\0')
-		n++;
-	for (m = n - 1; m >= 0; m--)
-		_putchar(s[m]);
-	return (n);
+	if (f == NULL)
+		f = "(null)";
+	while (f[b] != '\0')
+		b++;
+	for (a = b - 1; a >= 0; a--)
+		_putchar(f[a]);
+	return (b);
 }
 

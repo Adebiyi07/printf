@@ -1,31 +1,30 @@
 #include "main.h"
 
 /**
- * str_printer - function to print a string.
- * @val: argument parameter
- * Return: returns string
- */
+* str_printer - function which prints a string.
+* @val: the argument parameter
+* Return: a string
+*/
 
 int str_printer(va_list val)
 {
-	char *s;
-	int i, str;
+	char *v;
+	int j, str;
 
-	s = va_arg(val, char *);
-	if (s == NULL)
+	v = va_arg(val, char *);
+	if (v == NULL)
 	{
-		s = "(null)";
-		str = _strlen(s);
-		for (i = 0; i < str; i++)
-			_putchar(s[i]);
+		v = "(null)";
+		str = _strlen(v);
+		for (j = 0; j < str; j++)
+		_putchar(v[j]);
 		return (str);
 	}
 	else
 	{
-		str = _strlen(s);
-		for (i = 0; i < str; i++)
-			_putchar(s[i]);
+		str = _strlen(v);
+		for (j = 0; j < str; j++)
+		_putchar(v[j]);
 		return (str);
 	}
 }
-

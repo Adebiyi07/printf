@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * int_printer - prints an integer
- * @args: argument parameter
- * Return: integers
- */
+* int_printer - function that prints an integer
+* @args: the argument parameter
+* Return: integers
+*/
 
 int int_printer(va_list args)
 {
-	int i = 1;
-	int n = va_arg(args, int);
-	int num, last = n % 10, digit, exp = 1;
+	int d = 1;
+	int g = va_arg(args, int);
+	int num, final = g % 10, index, exp = 1;
 
-	n = n / 10;
-	num = n;
-	if (last < 0)
+	g = g / 10;
+	num = g;
+	if (final < 0)
 	{
 		_putchar('-');
 		num = -num;
-		n = -n;
-		last = -last;
-		i++;
+		g = -g;
+		final = -final;
+		d++;
 	}
 	if (num > 0)
 	{
@@ -29,16 +29,16 @@ int int_printer(va_list args)
 			exp = exp * 10;
 			num = num / 10;
 		}
-		num = n;
+		num = g;
 		while (exp > 0)
 		{
-			digit = num / exp;
-			_putchar(digit + '0');
-			num = num - (digit * exp);
+			index = num / exp;
+			_putchar(index + '0');
+			num = num - (index * exp);
 			exp = exp / 10;
-			i++;
+			d++;
 		}
 	}
-	_putchar(last + '0');
-	return (i);
+	_putchar(final + '0');
+	return (d);
 }
